@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trackingapp для отслеживания посылок</title>
+    <link rel="preload" href="fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Raleway-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Raleway-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body class="page">
+    <header class="page__header header">
+      <div class="header__container">
+        <a class="header__logo">
+          <picture>
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-desktop.png">
+            <img class="header__image" src="img/logo-mobile.png" alt=" Логотип Trackingapp">
+          </picture>
+        </a>
+        <button class="header__toggle-burger" type="button" aria-label="Открыть меню">
+          <img src="img/icon-menu-open.svg" alt="Открытое меню" width="18" height="15">
+        </button>
+        <button class="header__toggle-search" type="button" aria-label="Отследить посылку">
+          <img src="img/icon-search.svg" alt="Закрыть меню" width="18" height="18">
+        </button>
+        <nav class="header__nav nav nav--closed">
+          <div class="nav__mobile-wrapper">
+            <div class="nav__mobile-top">
+              <h3 class="nav__title">Меню сайта</h3>
+              <button class="nav__togle-closed">
+                <img src="img/icon-menu-close.svg" alt="Закрыть меню" width="18" height="15">
+              </button>
+            </div>
+            <ul class="nav__list nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="#" aria-label="Отследить посылку">
+                  <span class="nav-list__link-text nav-list__link-textmobile">Отследить посылку</span>
+                </a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="#" aria-label="Компании">
+                  <span class="nav-list__link-text">Компании</span>
+                </a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="#" aria-label="Цены">
+                  <span class="nav-list__link-text">Цены</span>
+                </a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="#" aria-label="Войти на сайт">
+                  <span class="nav-list__link-text">Войти<span class="nav-list__link-textmobile"> на сайт</span></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+    </header>
+    <main class="page__main main">
+      <h1 class="visually-hidden">Сервис отслеживаний посылок</h1>
+      <section class="main__promo promo">
+        <div class="main__container">
+          <h2 class="promo__title title">Точное отслеживание посылок и почтовых отправлений</h2>
+          <p class="promo__text">Отследи посылку почты Украины, Беларуси, Великобритании, Китая, Гонконга, AliExpress,
+            Joom, GearBest, <span class="promo__text-mobile"> Banggood, eBay, iHerb, ASOS,</span>
+            <a class="promo__link-more" href="#">Полный список…</a></p>
+          <form class="promo__form promo-form" action="https://echo.htmlacademy.ru" method="post">
+            <!--action="https://echo.htmlacademy.ru" method="post" посмотреть отправляется ли-->
+            <label>
+              <input class="promo-form__input" type="text" name="tracking-number"
+                placeholder="Введите номер отслеживания">
+            </label>
+            <p class="promo-form__text"><span class="promo-form__mobile">Пример номера:</span>
+              <span class="promo-form__desktop">Например:</span>UM639385714US</p>
+            <button class="promo-form__btn button" type="submit">Отследить посылку</button>
+          </form>
+          <ul class="promo__list tracking-info-list">
+            <li class="tracking-info-list__item">
+              <span>250</span>
+              почтовых сервисов
+            </li>
+            <li class="tracking-info-list__item">
+              <span>362 235</span>
+              посылок отслежено
+            </li>
+            <li class="tracking-info-list__item">
+              <span>менее 2 сек</span>
+              обрабатывается запрос
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main__advantages advantages">
+        <div class="main__container">
+          <h2 class="advantages__title title">Преимущества нашего сервиса</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">Оповещение об изменении
+              статуса посылки по Email</li>
+            <li class="advantages__item">Большой охват стран
+              и сервисов доставки</li>
+            <li class="advantages__item">Подробная информация
+              о посылке</li>
+          </ul>
+        </div>
+      </section>
+      <section class="main__deliverys deliverys">
+        <div class="main__container">
+          <h2 class="deliverys__title title">Отслеживание международных почтовых отправлений всего мира</h2>
+          <p class="deliverys__text">Неважно в каком интернет-магазине или торговой площадке вы купили товары, вы всегда
+            сможете отследить полный путь заказа до вашей двери с нашим сервисом отслеживания посылок</p>
+          <ul class="deliverys__company deliverys-company">
+            <li class="deliverys-company__item">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/fedexstar-desktop.png">
+                <img class="deliverys-company__img" src="img/fedexstar-mobile.png" alt="Перевозчик Fedex">
+              </picture>
+              <p class="deliverys-company__title">FedEx</p>
+            </li>
+            <li class="deliverys-company__item">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/upsstar-desktop.png">
+                <img class="deliverys-company__img" src="img/dhlstar-mobile.png" alt="Перевозчик Up">
+              </picture>
+              <p class="deliverys-company__title">UPS</p>
+            </li>
+            <li class="deliverys-company__item">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/dhlstar-desktop.png">
+                <img class="deliverys-company__img" src="img/fedexstar-mobile.png" alt="Перевозчик DHL">
+              </picture>
+              <p class="deliverys-company__title">DHL</p>
+            </li>
+            <li class="deliverys-company__item">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/uspsstar-desktop.png">
+                <img class="deliverys-company__img" src="img/fedexstar-mobile.png" alt="Перевозчик USPS">
+              </picture>
+              <p class="deliverys-company__title">USPS</p>
+            </li>
+            <li class="deliverys-company__item">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/asendiastar-desktop.png">
+                <img class="deliverys-company__img" src="img/dhlstar-mobile.png" alt="Перевозчик Asendia USA">
+              </picture>
+              <p class="deliverys-company__title">Asendia USA</p>
+            </li>
+            <li class="deliverys-company__item">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/tntstar-desktop.png">
+                <img class="deliverys-company__img" src="img/fedexstar-mobile.png" alt="Перевозчик TNT">
+              </picture>
+              <p class="deliverys-company__title">TNT</p>
+            </li>
+            <li class="deliverys-company__item deliverys-company__item--mobile">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/puloratorstar-desktop.png">
+                <img class="deliverys-company__img" src="img/dhlstar-mobile.png" alt="Перевозчик Purolator">
+              </picture>
+              <p class="deliverys-company__title">Purolator</p>
+            </li>
+          </ul>
+          <a class="deliverys__link-more" href="#">Показать полный список сервисов</a>
+        </div>
+      </section>
+      <section class="main__reviews reviews">
+        <div class="main__container">
+          <h2 class="reviews__title title">Последние отзывы наших пользователей</h2>
+          <div class="reviews__slider">
+            <ul class="reviews__list">
+              <li class="reviews__item">
+                <blockquote>
+                  <cite class="reviews__author">Тимьян<span class="review__title-desktop">, Киев</span></cite>
+                  <p class="reviews__text">Часто несколько компаний участвуют в доставке вашей посылки, приложение
+                    автоматически определяет подходящие почтовые компании по номеру отправления и отслеживает во всех
+                    сразу,
+                    экономя ваше время.</p>
+                </blockquote>
+              </li>
+              <li class="reviews__item">
+                <blockquote>
+                  <cite class="reviews__author">Тимьян,</cite>
+                  <time datetime="2020-04-23">23 апреля</time>
+                  <p class="reviews__text">Доставлена быстро, упаковка в норме, менеджер на почте помог вскрыть, сделал
+                    это
+                    быстро и профессионально, это плюс. О том, что посылка уже на почте, узнал из смс от Новой почты,
+                    тоже
+                    плюс. А минус - дороговато… <span>подробнее</span></p>
+                </blockquote>
+              </li>
+              <li class="reviews__item">
+                <blockquote>
+                  <cite class="reviews__author">Мирослав,</cite>
+                  <time datetime="2020-04-23">10 июня</time>
+                  <p class="reviews__text">Часто несколько компаний участвуют в доставке вашей посылки, приложение
+                    автоматически определяет подходящие почтовые компании по номеру отправления и отслеживает во всех
+                    сразу, экономя ваше время.</p>
+                </blockquote>
+              </li>
+            </ul>
+            <button class="reviews__button reviews__button--prev" type="button">
+              <img src="img/arrow-left.svg" alt="Предыдущий слайд">
+            </button>
+            <button class="reviews__button reviews__button--next" type="button">
+              <img src="img/arrow-right.svg" alt="Следующий слайд">
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="main__description description">
+        <div class="main__container">
+          <h2 class="description__title title">Отследить и узнать где посылка — это просто
+          </h2>
+          <p class="description__text">Каждый, кто когда-нибудь отправлял посылку по почте, — знает, какая это сложная
+            штука. Отправить-то легко, а вот понять, почему посылка всё еще не может попасть к адресату — намного
+            труднее.
+            К счастью, для удобства и спокойствия отправителей и получателей существует такая функция, как трекинг
+            посылок. С ее помощью Вы можете легко найти посылку, отследив ее текущее место пребывания.
+          </p>
+          <p class="description__text">
+            Как это работает? Легко и просто. У каждого отправления есть свой уникальный трек-номер, который чаще
+            всего
+            можно получить у пересылочной компании. Будь то государственная почта или <a class="description__link-more"
+              href="#">подробнее</a> <span class=" deskription__text-mobile">международная служба доставки
+              (актуально для любителей зарубежных интернет-магазинов) — трек-код есть всегда. С помощью этой
+              комбинации
+              цифр
+              можно проследить посылку, просто вписав код в соответствующее поле на нашем сайте.</span>
+          </p>
+          <p class="description__text description__text--mobile">
+            Стоит сказать, что отслеживание почтовых отправлений, как и отслеживание международных почтовых
+            отправлений
+            —
+            это очень распространенная практика. Почтовые и пересылочные компании сами заинтересованы в этом, ведь
+            честность и прозрачность положительно влияет на их имидж. Ну, а для простого человека возможность
+            отследить
+            посылку по номеру — это просто удобная и полезная функция, которая позволяет выйти из состояния неведения,
+            получив актуальную информацию.
+          </p>
+          <p class="description__text description__text--mobile">
+            На самом деле, отправления почти всегда находят своих адресатов. Это лишь вопрос времени. Но если Вы
+            сможете
+            узнать, где посылка в настоящий момент — согласитесь, ожидание станет куда более спокойным! Поэтому, если
+            Вы
+            являетесь отправителем или получателем чего-то стоящего и весомого — советуем Вам отследить посылку по
+            трек-номеру. Эта процедура займет несколько секунд времени и обязательно даст свой достоверный результат.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer footer">
+      <div class="footer__container">
+        <section class="footer__nav footer-nav">
+          <h2 class="visually-hidden">Навигация по разделам</h2>
+          <a class="footer-nav__link" href="#" target="_blank" aria-label="Отслеживание посылок">Отслеживание
+            посылок</a>
+          <a class="footer-nav__link" href="#" target="_blank" aria-label="Подключение страны">Подключение страны</a>
+          <a class="footer-nav__link" href="#" target="_blank" aria-label="Обратная связь">Обратная связь</a>
+          <a class="footer-nav__link" href="#" target="_blank"
+            aria-label="Отслеживание для интернет магазинов">Отслеживание для интернет
+            магазинов</a>
+          <a class="footer-nav__link" href="#" target="_blank" aria-label="Виджет отслеживания">Виджет отслеживания</a>
+          <a class="footer-nav__link" href="#" target="_blank" aria-label="О проекте">О проекте</a>
+          <a class="footer-nav__link" href="#" target="_blank" aria-label="Политика конфеденциальности">Политика
+            конфеденциальности</a>
+          <a class="footer-nav__link" href="#" target="_blank" aria-label="Партнерам">Партнерам</a>
+        </section>
+        <section class="footer__developer developer">
+          <h2 class="visually-hidden">Информация о разработчике сайта</h2>
+          <p class="developer__text">
+            2019 &#169; <a class="developer__link" href="#" target="_blank">trackingapp.com</a>
+          </p>
+        </section>
+      </div>
+    </footer>
+  </body>
+
+</html>
