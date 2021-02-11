@@ -332,17 +332,18 @@ ul {
 
 .main__advantages {
   outline: 1px solid green;
-  min-height: 589px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  background-color: #f8f0e6; }
   @media (min-width: 1200px) {
     .main__advantages {
-      min-height: 689px;
       margin-bottom: 150px; } }
 
 .advantages {
   outline: 1px solid blue;
-  background-color: #f8f0e6;
   padding: 40px 12px 51px 10px; }
+  @media (min-width: 1200px) {
+    .advantages {
+      padding: 150px 73px 146px; } }
 
 .advantages__title {
   text-align: center;
@@ -359,7 +360,10 @@ ul {
       flex-direction: row; } }
 
 .advantages__item {
+  position: relative;
   width: 100%;
+  box-sizing: border-box;
+  padding-right: 15px;
   line-height: 21px;
   display: flex;
   justify-content: flex-end; }
@@ -373,6 +377,53 @@ ul {
     @media (min-width: 1200px) {
       .advantages__item:nth-child(2n) {
         justify-content: center; } }
+  .advantages__item::after {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .advantages__item--massege::after {
+    width: 130px;
+    height: 106px;
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/massege-mobile.png"); }
+    @media (min-width: 1200px) {
+      .advantages__item--massege::after {
+        width: 196px;
+        height: 160px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("../img/massege-desktop.png"); } }
+  .advantages__item--delivery::after {
+    width: 129px;
+    height: 130px;
+    bottom: 0;
+    right: 6%;
+    background-image: url("../img/delivery-mobile.png"); }
+    @media (min-width: 1200px) {
+      .advantages__item--delivery::after {
+        width: 194px;
+        height: 195px;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("../img/delivery-desktop.png"); } }
+  .advantages__item--information::after {
+    width: 128px;
+    height: 129px;
+    bottom: 0;
+    left: 6%;
+    background-image: url("../img/information-mobile.png"); }
+    @media (min-width: 1200px) {
+      .advantages__item--information::after {
+        width: 192px;
+        height: 193px;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("../img/information-desktop.png"); } }
   @media (min-width: 1200px) {
     .advantages__item {
       line-height: 28px;
@@ -381,14 +432,15 @@ ul {
 .advantages__text {
   margin: 0;
   padding: 0;
-  width: 40%; }
+  width: 45%;
+  font-size: 16px; }
   @media (min-width: 768px) {
     .advantages__text {
       font-size: 21px; } }
   @media (min-width: 1200px) {
     .advantages__text {
       text-align: center;
-      width: 70%;
+      width: 82%;
       min-height: 287px;
       display: flex;
       align-items: flex-end; } }
@@ -405,38 +457,72 @@ ul {
 .deliverys {
   outline: 1px solid blue; }
 
+.deliverys__title {
+  width: 100%;
+  padding: 40px 2px 25px;
+  text-align: center; }
+  @media (min-width: 1200px) {
+    .deliverys__title {
+      width: 60%;
+      margin: 110px auto 17px; } }
+
 .deliverys__text {
-  line-height: 21px; }
+  line-height: 21px;
+  width: 98%;
+  margin: 0 auto 30px;
+  text-align: center; }
   @media (min-width: 1200px) {
     .deliverys__text {
-      line-height: 24px; } }
+      line-height: 24px;
+      width: 65%;
+      margin-bottom: 57px; } }
 
-.deliverys-company__item--mobile {
-  display: none; }
+.deliverys__company {
+  width: 86%;
+  margin: 0 auto; }
+
+.deliverys-company {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 1fr 1fr; }
   @media (min-width: 1200px) {
-    .deliverys-company__item--mobile {
-      display: block; } }
+    .deliverys-company {
+      display: flex;
+      width: 98%;
+      margin: 0 auto;
+      justify-content: space-between; } }
+
+.deliverys-company__item {
+  text-align: center; }
+  .deliverys-company__item--mobile {
+    display: none; }
+    @media (min-width: 1200px) {
+      .deliverys-company__item--mobile {
+        display: block; } }
 
 @media (min-width: 768px) {
   .deliverys-company__title {
     font-size: 14px; } }
 
 .deliverys__link-more {
+  display: block;
+  width: 100%;
   font-weight: 700;
-  color: #e77800; }
+  color: #e77800;
+  text-align: center; }
 
 .main__reviews {
   outline: 1px solid green;
   min-height: 489px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  background-color: #ebf0f4; }
   @media (min-width: 1200px) {
     .main__reviews {
       min-height: 729px;
       margin-bottom: 150px; } }
 
 .reviews {
-  outline: 1px solid blue;
-  background-color: #ebf0f4; }
+  outline: 1px solid blue; }
 
 .reviews__author {
   font-weight: 700;
@@ -458,13 +544,42 @@ ul {
       margin-bottom: 197px; } }
 
 .description {
-  outline: 1px solid blue; }
+  outline: 1px solid blue;
+  position: relative; }
+  @media (min-width: 1200px) {
+    .description::before {
+      position: absolute;
+      content: "";
+      width: 332px;
+      height: 589px;
+      top: 25px;
+      left: 0;
+      background-image: url("../img/icongroupe-desktop.png");
+      background-repeat: no-repeat;
+      background-size: contain; } }
+
+.description__content {
+  width: 100%; }
+  @media (min-width: 1200px) {
+    .description__content {
+      width: 63%;
+      margin-left: 400px; } }
+
+@media (min-width: 1200px) {
+  .description__title {
+    margin-bottom: 30px; } }
+
+@media (min-width: 1200px) {
+  .description__text {
+    line-height: 21px;
+    margin-top: 0;
+    margin-bottom: 25px; } }
 
 .description__text--mobile {
   display: none; }
   @media (min-width: 1200px) {
     .description__text--mobile {
-      display: inline-block; } }
+      display: block; } }
 
 .deskription__text-mobile {
   display: none; }

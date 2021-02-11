@@ -352,19 +352,22 @@
 
 .main__advantages {
   outline: 1px solid green;
-  min-height: 589px;
   margin-bottom: 40px;
+  background-color: $lightviolet;
 
   @media (min-width: $desktop-width) {
-    min-height: 689px;
     margin-bottom: 150px;
   }
 }
 
 .advantages {
   outline: 1px solid blue;
-  background-color: $lightviolet;
+  // background-color: $lightviolet;
   padding: 40px 12px 51px 10px;
+
+  @media (min-width: $desktop-width) {
+    padding: 150px 73px 146px;
+  }
 }
 
 .advantages__title {
@@ -386,7 +389,10 @@
 }
 
 .advantages__item {
+  position: relative;
   width: 100%;
+  box-sizing: border-box;
+  padding-right: 15px;
   line-height: 21px;
   display: flex;
   justify-content: flex-end;
@@ -407,6 +413,70 @@
     }
   }
 
+  &::after {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--massege {
+    &::after {
+      width: 130px;
+      height: 106px;
+      bottom: 0;
+      left: 0;
+      background-image: url("../img/massege-mobile.png");
+
+      @media (min-width: $desktop-width) {
+        width: 196px;
+        height: 160px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("../img/massege-desktop.png");
+      }
+    }
+  }
+
+  &--delivery {
+    &::after {
+      width: 129px;
+      height: 130px;
+      bottom: 0;
+      right: 6%;
+      background-image: url("../img/delivery-mobile.png");
+
+      @media (min-width: $desktop-width) {
+        width: 194px;
+        height: 195px;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("../img/delivery-desktop.png");
+      }
+    }
+  }
+
+  &--information {
+    &::after {
+      width: 128px;
+      height: 129px;
+      bottom: 0;
+      left: 6%;
+      background-image: url("../img/information-mobile.png");
+
+      @media (min-width: $desktop-width) {
+        width: 192px;
+        height: 193px;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("../img/information-desktop.png");
+      }
+    }
+  }
+
   @media (min-width: $desktop-width) {
     line-height: 28px;
     justify-content: center;
@@ -416,7 +486,8 @@
 .advantages__text {
   margin: 0;
   padding: 0;
-  width: 40%;
+  width: 45%;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -424,7 +495,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: center;
-    width: 70%;
+    width: 82%;
     min-height: 287px;
     display: flex;
     align-items: flex-end;
@@ -446,21 +517,52 @@
   outline: 1px solid blue;
 }
 
-.deliverys__title {}
-
-.deliverys__text {
-  line-height: 21px;
+.deliverys__title {
+  width: 100%;
+  padding: 40px 2px 25px;
+  text-align: center;
 
   @media (min-width: $desktop-width) {
-    line-height: 24px;
+    width: 60%;
+    margin: 110px auto 17px;
   }
 }
 
-.deliverys__company {}
+.deliverys__text {
+  line-height: 21px;
+  width: 98%;
+  margin: 0 auto 30px;
+  text-align: center;
 
-.deliverys-company {}
+  @media (min-width: $desktop-width) {
+    line-height: 24px;
+    width: 65%;
+    margin-bottom: 57px;
+  }
+}
+
+.deliverys__company {
+  width: 86%;
+  margin: 0 auto;
+}
+
+.deliverys-company {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 1fr 1fr;
+
+   @media (min-width: $desktop-width) {
+     display: flex;
+     width: 98%;
+     margin: 0 auto;
+     justify-content: space-between;
+
+   }
+}
 
 .deliverys-company__item {
+  text-align: center;
+
   &--mobile {
     display: none;
 
@@ -479,14 +581,18 @@
 }
 
 .deliverys__link-more {
+  display: block;
+  width: 100%;
   font-weight: 700;
   color: $goldorange;
+  text-align: center;
 }
 
 .main__reviews {
   outline: 1px solid green;
   min-height: 489px;
   margin-bottom: 40px;
+  background-color: $lightblue;
 
   @media (min-width: $desktop-width) {
     min-height: 729px;
@@ -497,7 +603,7 @@
 .reviews {
   outline: 1px solid blue;
 
-  background-color: $lightblue;
+  // background-color: $lightblue;
 }
 
 .reviews__author {
@@ -540,17 +646,51 @@
 
 .description {
   outline: 1px solid blue;
+  position: relative;
 
+  @media (min-width: $desktop-width) {
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 332px;
+      height: 589px;
+      top: 25px;
+      left: 0;
+      background-image: url("../img/icongroupe-desktop.png");background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
 }
 
-.description__title {}
+.description__content {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 63%;
+    margin-left: 400px;
+  }
+}
+
+.description__title {
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
 
 .description__text {
+
+   @media (min-width: $desktop-width) {
+     line-height: 21px;
+     margin-top: 0;
+     margin-bottom: 25px;
+   }
   &--mobile {
     display: none;
 
     @media (min-width: $desktop-width) {
-      display: inline-block;
+      display: block;
     }
   }
 }
