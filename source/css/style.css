@@ -69,7 +69,7 @@ input[type="radio"].visually-hidden {
 .title {
   margin: 0;
   font-size: 21px;
-  line-height: 21px;
+  line-height: normal;
   font-weight: 400; }
   @media (min-width: 768px) {
     .title {
@@ -85,9 +85,6 @@ input[type="radio"].visually-hidden {
   background-color: #e77800;
   border: none;
   cursor: pointer; }
-  @media (min-width: 768px) {
-    .button {
-      width: 193px; } }
 
 ul {
   padding: 0;
@@ -344,13 +341,34 @@ ul {
 
 .advantages {
   outline: 1px solid blue;
-  background-color: #f8f0e6; }
+  background-color: #f8f0e6;
+  padding: 40px 12px 51px 10px; }
+
+.advantages__title {
+  text-align: center;
+  margin-bottom: 49px; }
+
+.advantages__list {
+  display: flex;
+  flex-direction: column; }
 
 .advantages__item {
-  line-height: 21px; }
+  width: 100%;
+  line-height: 21px;
+  display: flex;
+  justify-content: flex-end; }
+  .advantages__item:not(:first-child) {
+    margin-top: 85px; }
+  .advantages__item:nth-child(2n) {
+    justify-content: flex-start; }
   @media (min-width: 1200px) {
     .advantages__item {
       line-height: 28px; } }
+
+.advantages__text {
+  margin: 0;
+  padding: 0;
+  width: 40%; }
 
 .main__deliverys {
   outline: 1px solid green;

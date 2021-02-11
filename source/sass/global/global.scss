@@ -32,7 +32,7 @@ input[type="radio"].visually-hidden {
 .title {
   margin: 0;
   font-size: 21px;
-  line-height: 21px;
+  line-height: normal;
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
@@ -53,9 +53,9 @@ input[type="radio"].visually-hidden {
   border: none;
   cursor: pointer;
 
-  @media (min-width: $tablet-width) {
-    width: 193px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   width: 193px;
+  // }
 }
 
 ul {
