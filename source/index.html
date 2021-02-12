@@ -72,13 +72,15 @@
             <a class="promo__link-more" href="#">Полный список…</a></p>
           <form class="promo__form promo-form" action="https://echo.htmlacademy.ru" method="post">
             <!--action="https://echo.htmlacademy.ru" method="post" посмотреть отправляется ли-->
-            <label>
-              <input class="promo-form__input" type="text" name="tracking-number"
-                placeholder="Введите номер отслеживания">
-            </label>
+            <div class="promo-form__wrapper">
+              <label>
+                <input class="promo-form__input" type="text" name="tracking-number"
+                  placeholder="Введите номер отслеживания">
+              </label>
+              <button class="promo-form__btn button" type="submit">Отследить посылку</button>
+            </div>
             <p class="promo-form__text"><span class="promo-form__mobile">Пример номера:</span>
               <span class="promo-form__desktop">Например:</span>UM639385714US</p>
-            <button class="promo-form__btn button" type="submit">Отследить посылку</button>
           </form>
           <ul class="promo__list tracking-info-list">
             <li class="tracking-info-list__item">
