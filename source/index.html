@@ -181,8 +181,8 @@
           <h2 class="reviews__title title">Последние отзывы наших пользователей</h2>
           <div class="reviews__slider">
             <ul class="reviews__list">
-              <li class="reviews__item">
-                <blockquote>
+              <li class="reviews__item reviews__item--hidden">
+                <blockquote class="reviews__blockquote">
                   <cite class="reviews__author">Тимьян<span class="review__title-desktop">, Киев</span></cite>
                   <p class="reviews__text">Часто несколько компаний участвуют в доставке вашей посылки, приложение
                     автоматически определяет подходящие почтовые компании по номеру отправления и отслеживает во всех
@@ -191,18 +191,21 @@
                 </blockquote>
               </li>
               <li class="reviews__item">
-                <blockquote>
-                  <cite class="reviews__author">Тимьян,</cite>
-                  <time datetime="2020-04-23">23 апреля</time>
+                <blockquote class="reviews__blockquote">
+                  <div class="reviews__author-wrapper">
+                    <cite class="reviews__author">Тимьян, </cite>
+                    <time datetime="2020-04-23"> &nbsp;23 апреля</time>
+                  </div>
                   <p class="reviews__text">Доставлена быстро, упаковка в норме, менеджер на почте помог вскрыть, сделал
                     это
-                    быстро и профессионально, это плюс. О том, что посылка уже на почте, узнал из смс от Новой почты,
+                    быстро и профессионально,&nbsp;это плюс. О том, что посылка уже на почте, узнал из смс от Новой
+                    почты,
                     тоже
                     плюс. А минус - дороговато… <span>подробнее</span></p>
                 </blockquote>
               </li>
-              <li class="reviews__item">
-                <blockquote>
+              <li class="reviews__item reviews__item--hidden">
+                <blockquote class="reviews__blockquote">
                   <cite class="reviews__author">Мирослав,</cite>
                   <time datetime="2020-04-23">10 июня</time>
                   <p class="reviews__text">Часто несколько компаний участвуют в доставке вашей посылки, приложение
@@ -211,12 +214,14 @@
                 </blockquote>
               </li>
             </ul>
-            <button class="reviews__button reviews__button--prev" type="button">
-              <img src="img/arrow-left.svg" alt="Предыдущий слайд">
-            </button>
-            <button class="reviews__button reviews__button--next" type="button">
-              <img src="img/arrow-right.svg" alt="Следующий слайд">
-            </button>
+            <div class="reviews__button-wrapper">
+              <button class="reviews__button reviews__button--prev" type="button">
+                <img src="img/arrow-left.svg" alt="Предыдущий слайд">
+              </button>
+              <button class="reviews__button reviews__button--next" type="button">
+                <img src="img/arrow-right.svg" alt="Следующий слайд">
+              </button>
+            </div>
           </div>
         </div>
       </section>
