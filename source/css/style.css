@@ -250,7 +250,7 @@ ul {
     content: "";
     width: 153px;
     height: 116px;
-    top: 25%;
+    bottom: 48%;
     right: 6%;
     background-image: url("../img/promo-mobile.png");
     background-repeat: no-repeat;
@@ -277,21 +277,19 @@ ul {
   width: 79%; }
   @media (min-width: 768px) {
     .promo__title {
-      width: 62%; } }
-  @media (min-width: 1200px) {
-    .promo__title {
+      width: 62%;
       font-size: 32px; } }
 
 .promo__text {
   width: 50%;
   margin: 0;
   padding: 24px 0 31px;
-  line-height: 21px;
-  min-height: 180px; }
+  line-height: 21px; }
   @media (min-width: 768px) {
     .promo__text {
       width: 70%;
-      line-height: normal; } }
+      line-height: normal;
+      font-size: 16px; } }
   @media (min-width: 1200px) {
     .promo__text {
       width: 52%;
@@ -394,13 +392,23 @@ ul {
 .advantages__title {
   text-align: center;
   margin-bottom: 49px; }
+  @media (min-width: 768px) {
+    .advantages__title {
+      font-size: 32px;
+      width: 50%;
+      margin: 0 auto 40px; } }
   @media (min-width: 1200px) {
     .advantages__title {
       margin-bottom: 76px; } }
 
 .advantages__list {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 290px;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .advantages__list {
+      width: 100%; } }
   @media (min-width: 1200px) {
     .advantages__list {
       flex-direction: row; } }
@@ -415,6 +423,9 @@ ul {
   justify-content: flex-end; }
   .advantages__item:not(:first-child) {
     margin-top: 85px; }
+    @media (min-width: 768px) {
+      .advantages__item:not(:first-child) {
+        margin-top: 50px; } }
     @media (min-width: 1200px) {
       .advantages__item:not(:first-child) {
         margin-top: 0; } }
@@ -476,7 +487,8 @@ ul {
   @media (min-width: 768px) {
     .advantages__item {
       line-height: 28px;
-      justify-content: center; } }
+      justify-content: center;
+      padding-right: 0; } }
   @media (min-width: 1200px) {
     .advantages__item {
       line-height: 28px;
@@ -489,10 +501,10 @@ ul {
   font-size: 16px; }
   @media (min-width: 768px) {
     .advantages__text {
-      font-size: 21px; } }
+      font-size: 21px;
+      text-align: center; } }
   @media (min-width: 1200px) {
     .advantages__text {
-      text-align: center;
       width: 82%;
       min-height: 287px;
       display: flex;
@@ -625,8 +637,14 @@ ul {
     background-image: url("../img/fedex-mobile.png");
     background-repeat: no-repeat;
     background-size: cover; }
+  @media (min-width: 768px) {
+    .reviews__author-wrapper {
+      width: 40%;
+      margin: 0 auto; } }
   @media (min-width: 1200px) {
     .reviews__author-wrapper {
+      width: 100%;
+      margin: 0;
       flex-direction: row;
       padding: 0 0 15px; }
       .reviews__author-wrapper::before {
