@@ -267,7 +267,7 @@ ul {
       width: 474px;
       height: 338px;
       top: 6%;
-      left: 60%;
+      left: 58%;
       background-image: url("../img/promo-desktop.png");
       background-repeat: no-repeat;
       background-size: contain; } }
@@ -746,6 +746,23 @@ ul {
     .description__link-more {
       display: none; } }
 
+.page__footer {
+  position: relative; }
+  .page__footer::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 85px;
+    top: -25px;
+    left: 0;
+    background-image: url("../img/border-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10; }
+  @media (min-width: 768px) {
+    .page__footer::after {
+      background-image: url("../img/border-desktop.png"); } }
+
 .footer {
   outline: 1px solid blue;
   background-color: #ffd67a; }
@@ -763,10 +780,34 @@ ul {
       max-width: 1920px; } }
 
 .footer__nav {
+  position: relative;
   padding: 58px 25px 0; }
+  .footer__nav::before {
+    position: absolute;
+    content: "";
+    width: 180px;
+    height: 52px;
+    top: 20px;
+    left: 20px;
+    background-image: url("../img/icon-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  @media (min-width: 768px) {
+    .footer__nav::before {
+      display: none; } }
   @media (min-width: 1200px) {
     .footer__nav {
-      padding: 0; } }
+      padding: 0; }
+      .footer__nav::after {
+        position: absolute;
+        content: "";
+        width: 317px;
+        height: 94px;
+        bottom: -55px;
+        right: 30px;
+        background-image: url("../img/icon-desktop.png");
+        background-repeat: no-repeat;
+        background-size: cover; } }
 
 .footer-nav {
   display: flex;
@@ -818,10 +859,12 @@ ul {
       line-height: 40px; } }
 
 .footer__developer {
+  position: relative;
   padding: 25px; }
   @media (min-width: 1200px) {
     .footer__developer {
-      padding-left: 0; } }
+      padding-left: 0;
+      min-height: 157px; } }
 
 .developer__text {
   font-weight: 700;
@@ -830,10 +873,24 @@ ul {
   margin: 0; }
   @media (min-width: 768px) {
     .developer__text {
-      text-align: center; } }
+      text-align: center; }
+      .developer__text::before {
+        position: absolute;
+        content: "";
+        width: 284px;
+        height: 7px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("../img/borderblack-desktop.png");
+        background-repeat: no-repeat;
+        background-size: cover; } }
   @media (min-width: 1200px) {
     .developer__text {
-      text-align: left; } }
+      text-align: left; }
+      .developer__text::before {
+        left: 0;
+        transform: translateX(0); } }
 
 .developer__link {
   color: inherit; }
