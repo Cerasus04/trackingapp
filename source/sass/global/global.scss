@@ -44,7 +44,8 @@ input[type="radio"].visually-hidden {
 .button {
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
+  margin-top: 21px;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
@@ -53,9 +54,10 @@ input[type="radio"].visually-hidden {
   border: 0;
   cursor: pointer;
 
-  // @media (min-width: $tablet-width) {
-  //   width: 193px;
-  // }
+  @media (min-width: $tablet-width) {
+    padding: 10px;
+    margin: 0;
+  }
 }
 
 ul {

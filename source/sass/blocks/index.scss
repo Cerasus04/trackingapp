@@ -27,7 +27,7 @@
 
   // position: relative;
   min-height: 34px;
-  margin: 23px 0 30px;
+  margin: 23px 0;
 
   @media (min-width: $desktop-width) {
     min-height: 39px;
@@ -80,8 +80,8 @@
 
 .header__toggle-burger {
   position: absolute;
-  top: 5px;
-  left: 0;
+  top: 4px;
+  left: -5px;
   background: transparent;
   border: 0;
 
@@ -92,8 +92,8 @@
 
 .header__toggle-search {
   position: absolute;
-  top: 5px;
-  right: 0;
+  top: 0;
+  right: -6px;
   background: transparent;
   border: 0;
 
@@ -254,8 +254,8 @@
     content: "";
     width: 153px;
     height: 116px;
-    bottom: 48%;
-    right: 6%;
+    bottom: 49%;
+    right: 5%;
     background-image: url("../img/promo-mobile.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -275,8 +275,8 @@
       content: "";
       width: 474px;
       height: 320px;
-      top: 6%;
-      left: 61%;
+      top: 7%;
+      left: 60.5%;
       background-image: url("../img/promo-mobile.svg");
       background-repeat: no-repeat;
       background-size: contain;
@@ -301,7 +301,7 @@
 .promo__text {
   width: 50%;
   margin: 0;
-  padding: 24px 0 31px;
+  padding: 19px 0 24px;
   line-height: 21px;
   // min-height: 180px;
 
@@ -364,16 +364,16 @@
 .promo-form__input {
   width: 100%;
   margin: 0 auto;
-  padding: 24px 18px 20px;
+  padding: 22px 18px 20px;
   border: 1px solid #000000;
   background-color: #ffffff;
   line-height: normal;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
     width: 457px;
      padding: 21px 16px 20px;
     margin-right: 20px;
-    font-size: 16px;
     color: $lightgray;
   }
 }
@@ -437,7 +437,7 @@
 
 .main__advantages {
   outline: 1px solid green;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
   background-color: $lightviolet;
 
   @media (min-width: $desktop-width) {
@@ -447,7 +447,7 @@
 
 .advantages {
   outline: 1px solid blue;
-  padding: 40px 12px 51px 10px;
+  padding: 24px 12px 51px 10px;
 
   @media (min-width: $desktop-width) {
     padding: 140px 0 146px;
@@ -456,7 +456,7 @@
 
 .advantages__title {
   text-align: center;
-  margin-bottom: 49px;
+  margin-bottom: 46px;
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
@@ -489,13 +489,13 @@
   position: relative;
   width: 100%;
   box-sizing: border-box;
-  padding-right: 15px;
+  // padding-right: 15px;
   line-height: 21px;
   display: flex;
   justify-content: flex-end;
 
   &:not(:first-child) {
-    margin-top: 85px;
+    // margin-top: 85px;
 
     @media (min-width: $tablet-width) {
       margin-top: 50px;
@@ -522,6 +522,8 @@
   }
 
   &--massege {
+    margin-bottom: 76px;
+
     &::after {
       width: 130px;
       height: 106px;
@@ -542,14 +544,20 @@
         background-image: url("../img/massege-desktop.svg");
       }
     }
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
   }
 
   &--delivery {
+    margin-bottom: 89px;
+
     &::after {
       width: 129px;
       height: 130px;
-      bottom: 0;
-      right: 6%;
+      bottom: -34px;
+      right: -2%;
       background-image: url("../img/delivery-mobile.svg");
 
 
@@ -562,14 +570,18 @@
         background-image: url("../img/delivery-desktop.svg");
       }
     }
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
   }
 
   &--information {
     &::after {
       width: 128px;
       height: 129px;
-      bottom: 0;
-      left: 6%;
+      bottom: -31px;
+      left: 0;
       background-image: url("../img/information-mobile.svg");
 
       @media (min-width: $desktop-width) {
@@ -598,7 +610,7 @@
 .advantages__text {
   margin: 0;
   padding: 0;
-  width: 45%;
+  width: 50%;
   font-size: 16px;
 
   @media (min-width: $tablet-width) {
@@ -608,7 +620,7 @@
 
   @media (min-width: $desktop-width) {
     // text-align: center;
-    width: 82%;
+    width: 72%;
     min-height: 290px;
     display: flex;
     align-items: flex-end;
@@ -633,7 +645,7 @@
 
 .deliverys__title {
   width: 100%;
-  padding: 40px 2px 25px;
+  padding: 40px 2px 20px;
   text-align: center;
 
   @media (min-width: $desktop-width) {
@@ -646,8 +658,8 @@
 
 .deliverys__text {
   line-height: 21px;
-  width: 98%;
-  margin: 0 auto 30px;
+  width: 100%;
+  margin: 0 auto 24px;
   text-align: center;
 
   @media (min-width: $desktop-width) {
@@ -658,10 +670,10 @@
   }
 }
 
-.deliverys__company {
-  width: 86%;
-  margin: 0 auto;
-}
+// .deliverys__company {
+//   width: 86%;
+//   margin: 0 auto;
+// }
 
 .deliverys-company {
   display: grid;
@@ -700,14 +712,18 @@
 .deliverys-company__img {}
 
 .deliverys-company__title {
+  margin: 5px 0 24px;
+
   @media (min-width: $tablet-width) {
     font-size: 14px;
-    margin: 0;  }
+    margin: 0;
+  }
 }
 
 .deliverys__link-more {
   display: block;
   width: 100%;
+  font-size: 16px;
   font-weight: 700;
   color: $goldorange;
   text-align: center;
@@ -720,7 +736,7 @@
 .main__reviews {
   outline: 1px solid green;
   min-height: 489px;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
   background-color: $lightblue;
 
   @media (min-width: $desktop-width) {
@@ -735,7 +751,7 @@
 
 .reviews__title {
   text-align: center;
-  padding: 40px 0 30px;
+  padding: 34px 0 30px;
 
   @media (min-width: $desktop-width) {
     padding: 142px 0 54px;
@@ -746,7 +762,7 @@
 .reviews__slider {}
 
 .reviews__list {
-  margin-bottom: 60px;
+  margin-bottom: 19px;
 
     @media (min-width: $desktop-width) {
       display: flex;
@@ -756,7 +772,7 @@
 
 .reviews__item {
   background-color: $white;
-  width: 89%;
+  width: 100%;
   margin: 0 auto;
   box-shadow: 0px 10px 40px 0 rgba(0, 0, 0, 0.1);
 
@@ -774,7 +790,7 @@
 .reviews__blockquote {
   margin: 0;
   width: 100%;
-  padding: 40px 20px;
+  padding: 34px 30px 25px;
 
   @media (min-width: $desktop-width) {
     padding: 0 43px 0 139px;
@@ -785,14 +801,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 0 20px 30px 70px;
+  padding: 0 20px 27px 66px;
 
   &::before {
     position: absolute;
     content: "";
     width: 50px;
     height: 50px;
-    top: -25%;
+    top: -14%;
     left: 0;
     background-image: url("../img/fedex-mobile.png");
     background-repeat: no-repeat;
@@ -836,7 +852,7 @@
 }
 
 .reviews__text {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 21px;
   margin: 0;
   & span {
@@ -876,9 +892,10 @@
 
 .main__description {
   outline: 1px solid green;
-  margin-bottom: 53px;
+  margin-bottom: 87px;
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
   }
 }
 
@@ -912,6 +929,7 @@
 }
 
 .description__title {
+  margin-bottom: 20px;
 
   @media (min-width: $desktop-width) {
     margin-top: -8px;
@@ -921,6 +939,7 @@
 
 .description__text {
   line-height: 21px;
+  margin-bottom: 35px;
 
    @media (min-width: $desktop-width) {
      margin-top: 0;
@@ -959,7 +978,7 @@
     content: "";
     width: 100%;
     height: 85px;
-    top: -21px;
+    top: -40px;
     left: 0;
     background-image: url("../img/border-mobile.png");
     background-repeat: no-repeat;
@@ -1005,7 +1024,7 @@
 }
 .footer__nav {
   position: relative;
-  padding: 58px 25px 0;
+  padding: 58px 20px 0;
 
   &::before {
     position: absolute;
@@ -1033,8 +1052,8 @@
       content: "";
       width: 317px;
       height: 94px;
-      bottom: -55px;
-      right: 30px;
+      bottom: -50px;
+      right: 32px;
       background-image: url("../img/icon-desktop.svg");
       background-repeat: no-repeat;
       background-size: cover;
@@ -1047,17 +1066,12 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-
   }
 
   @media (min-width: $desktop-width) {
     padding: 93px 0 42px;
     flex-direction: row;
-
-    &:nth-child(2) {
-  transform: translateX(60px);
-}
-}
+  }
 }
 
 .footer-nav__wrapper {
@@ -1071,7 +1085,7 @@
     content: "";
     width: 100%;
     height: 4px;
-    bottom: 0;
+    bottom: -3px;
     background-image: url("../img/menu-line-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1093,13 +1107,16 @@
     &::after {
       display: none;
     }
+    &:nth-child(3) {
+      transform: translateX(60px);
+    }
   }
 }
 
 .footer-nav__link {
   color: $black;
   display: block;
-  padding-bottom: 27px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -1115,11 +1132,11 @@
 
 .footer__developer {
   position: relative;
-  padding: 25px;
+  padding: 18px;
 
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
+    padding: 35px 25px 25px 0;
     min-height: 157px;
   }
 }
@@ -1128,6 +1145,7 @@
 }
 
 .developer__text {
+  font-size: 16px;
   font-weight: 700;
   line-height: 24px;
   color: $lightred;
@@ -1156,6 +1174,7 @@
 
     &::before {
       left: 0;
+      top: -12px;
       transform: translateX(0);
      }
 
