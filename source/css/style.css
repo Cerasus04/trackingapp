@@ -12,34 +12,6 @@
   font-style: normal;
   font-display: swap; }
 
-@font-face {
-  font-family: "Raleway";
-  src: url("../fonts/Raleway-Medium.woff2"), url("../fonts/Raleway-Medium.woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: "Raleway";
-  src: url("../fonts/Raleway-Medium.woff2"), url("../fonts/Raleway-Medium.woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: "Raleway";
-  src: url("../fonts/Raleway-Bold.woff2"), url("../fonts/Raleway-Bold.woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: "Raleway";
-  src: url("../fonts/Raleway-Bold.woff2"), url("../fonts/Raleway-Bold.woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-
 html {
   box-sizing: border-box; }
 
@@ -926,7 +898,7 @@ ul {
     bottom: -3px;
     background-image: url("../img/menu-line-mobile.svg");
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: contain; }
   @media (min-width: 768px) {
     .footer-nav__wrapper {
       margin-right: 0;

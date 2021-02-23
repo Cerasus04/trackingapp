@@ -22,7 +22,7 @@
     bottom: -3px;
     background-image: url("../img/menu-line-mobile.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 
   @media (min-width: $tablet-width) {
