@@ -1,0 +1,63 @@
+.promo-form__wrapper {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.promo-form__input {
+  width: 100%;
+  margin: 0 auto;
+  padding: 22px 18px 20px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  line-height: normal;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 457px;
+    padding: 21px 16px 20px;
+    margin-right: 20px;
+    color: $lightgray;
+  }
+}
+
+.promo-form__text {
+  font-size: 12px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 8px;
+  }
+}
+
+.promo-form__mobile {
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.promo-form__desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
+}
+
+.promo-form__btn {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 69%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 29%;
+  }
+}

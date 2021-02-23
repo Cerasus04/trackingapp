@@ -1,0 +1,20 @@
+.tracking-info-list {
+  display: flex;
+  justify-content: flex-start;
+  width: 55%;
+}
+
+.tracking-info-list__item {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    margin-right: 49px;
+    line-height: 24px;
+
+    & span {
+      font-weight: 700;
+    }
+  }
+}

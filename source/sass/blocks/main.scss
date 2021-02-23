@@ -1,0 +1,62 @@
+.main__container {
+  width: 89%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 87%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 63%;
+    min-width: 1200px;
+  }
+}
+
+.main__promo {
+  position: relative;
+  margin-bottom: 37px;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    min-height: 381px;
+    margin-bottom: 152px;
+  }
+}
+
+.main__advantages {
+  margin-bottom: 28px;
+  background-color: $lightviolet;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 109px;
+  }
+}
+
+.main__deliverys {
+  min-height: 476px;
+  margin-bottom: 36px;
+
+  @media (min-width: $desktop-width) {
+    min-height: 439px;
+    margin-bottom: 146px;
+  }
+}
+
+.main__reviews {
+  min-height: 489px;
+  margin-bottom: 34px;
+  background-color: $lightblue;
+
+  @media (min-width: $desktop-width) {
+    min-height: 729px;
+    margin-bottom: 150px;
+  }
+}
+
+.main__description {
+  margin-bottom: 87px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
+  }
+}

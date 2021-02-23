@@ -1,0 +1,39 @@
+.deliverys__title {
+  width: 100%;
+  padding: 40px 2px 20px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    width: 60%;
+    margin: 0 auto;
+    padding: 32px 15px 38px;
+    transform: translateX(-16px);
+  }
+}
+
+.deliverys__text {
+  line-height: 21px;
+  width: 100%;
+  margin: 0 auto 24px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    line-height: 24px;
+    width: 65%;
+    margin-bottom: 57px;
+    transform: translateX(-16px);
+  }
+}
+
+.deliverys__link-more {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  color: $goldorange;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(-15px);
+  }
+}

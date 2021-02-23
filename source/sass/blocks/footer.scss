@@ -1,0 +1,67 @@
+.footer {
+  background-color: $lightorange;
+}
+
+.footer__container {
+  width: 89%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 87%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 63%;
+    min-width: 1200px;
+    max-width: 1920px;
+  }
+}
+
+.footer__nav {
+  position: relative;
+  padding: 58px 20px 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 180px;
+    height: 52px;
+    top: 20px;
+    left: 20px;
+    background-image: url("../img/icon-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 317px;
+      height: 94px;
+      bottom: -50px;
+      right: 32px;
+      background-image: url("../img/icon-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.footer__developer {
+  position: relative;
+  padding: 18px;
+
+  @media (min-width: $desktop-width) {
+    padding: 35px 25px 25px 0;
+    min-height: 157px;
+  }
+}
