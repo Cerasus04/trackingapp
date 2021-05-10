@@ -5,6 +5,8 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const ghPages = require("gh-pages");
+const path = require("path");
 
 // Styles
 
@@ -45,6 +47,11 @@ const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
+
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './source'), cb);
+}
+exports.deploy = deploy;
 
 exports.default = gulp.series(
   styles, server, watcher
