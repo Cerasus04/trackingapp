@@ -1,0 +1,73 @@
+.description {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 332px;
+      height: 589px;
+      top: 25px;
+      left: 12px;
+      background-image: url("../img/icongroupe-desktop.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.description__content {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 63%;
+    margin-left: 400px;
+    margin-bottom: 177px;
+  }
+}
+
+.description__title {
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -8px;
+    margin-bottom: 30px;
+  }
+}
+
+.description__text {
+  line-height: 21px;
+  margin-bottom: 35px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 25px;
+    line-height: 22px;
+  }
+
+  &--mobile {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.deskription__text-mobile {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
+}
+
+.description__link-more {
+  display: inline;
+  color: $goldorange;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

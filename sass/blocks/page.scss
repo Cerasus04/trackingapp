@@ -1,0 +1,53 @@
+.page {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  min-width: 260px;
+
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.page__header {
+  min-height: 34px;
+  margin: 23px 0;
+
+  @media (min-width: $desktop-width) {
+    min-height: 39px;
+    margin: 53px 0 114px;
+  }
+}
+
+.page__footer {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 85px;
+    top: -40px;
+    left: 0;
+    background-image: url("../img/border-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+  }
+
+  @media (min-width: $tablet-width) {
+
+    &::after {
+      background-image: url("../img/border-desktop.png");
+    }
+  }
+}

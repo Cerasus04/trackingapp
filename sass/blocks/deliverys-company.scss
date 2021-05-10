@@ -1,0 +1,44 @@
+.deliverys-company {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 1fr 1fr;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 100%;
+    margin: 0 auto 66px;
+    justify-content: flex-start;
+  }
+}
+
+.deliverys-company__item {
+  text-align: center;
+
+  &--mobile {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 78px;
+  }
+}
+
+.deliverys-company__item:nth-child(7) {
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.deliverys-company__title {
+  margin: 5px 0 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    margin: 0;
+  }
+}
