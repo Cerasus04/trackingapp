@@ -179,9 +179,11 @@
           <h2 class="reviews__title title">Последние отзывы наших пользователей</h2>
           <div class="reviews__slider">
             <ul class="reviews__list">
-              <li class="reviews__item reviews__item--hidden">
+              <li class="reviews__item"> <!--reviews__item--hidden-->
                 <blockquote class="reviews__blockquote">
-                  <cite class="reviews__author">Тимьян<span class="review__title-desktop">, Киев</span></cite>
+                  <div class="reviews__author-wrapper">
+                    <cite class="reviews__author">Тимьян<span class="review__title-desktop">, Киев</span></cite>
+                  </div>
                   <p class="reviews__text">Часто несколько компаний участвуют в доставке вашей посылки, приложение
                     автоматически определяет подходящие почтовые компании по номеру отправления и отслеживает во всех
                     сразу,
@@ -202,10 +204,12 @@
                     плюс. А минус - дороговато… <span>подробнее</span></p>
                 </blockquote>
               </li>
-              <li class="reviews__item reviews__item--hidden">
+              <li class="reviews__item">
                 <blockquote class="reviews__blockquote">
-                  <cite class="reviews__author">Мирослав,</cite>
-                  <time datetime="2020-04-23">10 июня</time>
+                  <div class="reviews__author-wrapper">
+                    <cite class="reviews__author">Мирослав,</cite>
+                    <time datetime="2020-04-23">10 июня</time>
+                  </div>
                   <p class="reviews__text">Часто несколько компаний участвуют в доставке вашей посылки, приложение
                     автоматически определяет подходящие почтовые компании по номеру отправления и отслеживает во всех
                     сразу, экономя ваше время.</p>
